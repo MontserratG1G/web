@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeria Esmeralda</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes/logo.jpg" alt="logo de tienda">
+            <h2 class="nombre-tienda">El Arte Esmeralda</h2>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="REGISTRO.html" class="nav-link">Registro</a>
+            <a href="Productos.html" class="nav-link">Productos</a>
+            <a href="Conocenos.html" class="nav-link">Conocemos</a>
+        </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="formulario">
+    <center>
+    <form id="miFormulario">
+        <h2>Registro</h2>
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <input type="email" placeholder="Correo">
+            <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Confirma Contraseña">
+            <br>
+            <input type="submit" class="btn" value="Enviar" onclick="return enviarFormulario()">
+    </form>
+</center>
+</div>
+<script>
+    function enviarFormulario() {
+        var formulario = document.getElementById('miFormulario');
+        formulario.style.display = 'none';
+        return false; // Detiene el envío predeterminado del formulario
+    }
+</script>
+<div class="REDES">
+    <h1><center>PUEDES VISITAR NUSTRAS REDES SOCIALES PARA OBTENER MAS INFORMACION SI LA NECESITAS!! </center></h1>
+    <a href="https://www.instagram.com/esmeralda_g104?igsh=MTRmZHpnaGU1djZ1bQ==" target="_blank">
+        <img src="Imagenes/Logo_Insta.jpg" alt="Texto" style="width: 10%; height: 10%;">
+        </a>
+      <br>
+      <br>
+      <a href="https://www.tiktok.com/@montserrat_0515?_t=8kcTMxgar4Q&_r=1" target="_blank">
+        <img src="Imagenes/Logo_Tiktok.webp" alt="Texto" style="width: 10%; height: 10%;">
+        </a>
+      <br>
+      <br>
+      <a href="https://www.facebook.com/profile.php?id=100076444312177&mibextid=ZbWKwL" target="_blank">
+        <img src="Imagenes/Logo_Facebook.png" alt="Texto" style="width: 10%; height: 10%;">
+        </a>
+</div>
+</body>
+</html>

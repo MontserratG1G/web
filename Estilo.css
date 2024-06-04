@@ -1,0 +1,154 @@
+a{
+text-decoration: none;
+color: rgb(207, 159, 191);
+font-weight: 600;
+padding-right: 10px;
+}
+nav a:hover{
+    color: crimson;
+}
+
+
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(236, 106, 132);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0; /* Lo fija en la parte superior */
+    left: 0; /* Lo fija en el borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 10px; /* Añade espacio alrededor del contenido del menú */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+.logo{
+    display: flex;
+    font-family: sans-serif;
+    margin: 0;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 10px;
+    }
+}
+
+/* -----------Estilo de Slider------------- */
+
+
+.slider {
+    width: 50%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+
+    animation: automatico 20s infinite alternate linear;
+    animation-timing-function: ease-out;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+
+
+@keyframes automatico{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+
+    100%{margin-left: -400%;}
+    120%{margin-left: -400%;}
+}
+
+
+.Conocenos{
+    font-size: 20px;
+    font-family: 'poppins', sans-serif ;
+}
+
+.contenedor{
+    display: flex;
+    width: 250px;
+    margin: 0 10px;
+}
+
+
+
+.img{
+    width: 250px;
+    margin: 0 10px;
+}
+
+body .registro{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffa7e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form{
+    background-color: crimson;
+    display: flex
+    flex-direction: column;
+    padding: 50px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form h2{
+    font-size: 30px;
+    color: #ffa7e9;
+    margin-bottom: 35px;
+}
+
+input{
+    padding: 17px;
+    border-radius: 25px;
+    background-color: #ffa7e9;
+    border: 2px solid #603452;
+    margin-bottom: 30px;
+    outline: none;
+    color: crimson;
+    font-size: 16px;
+}
+
+.btn{
+    border: solid #ffa7e9;
+    cursor: pointer;
+}
